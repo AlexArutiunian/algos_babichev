@@ -121,3 +121,20 @@ int main(){
     
     
 }
+
+#include <iostream>
+#include <vector>
+  
+int main()
+{
+    char name[25];
+    char c = ' ';
+    std::vector<char> v;
+    while(std::cin.get(c)){
+        
+        
+    }
+    for(auto x : v) 
+        std::cout << x;
+    return 0;
+}

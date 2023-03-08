@@ -23,10 +23,9 @@ int main(){
     }
 
     std::cout << all[0];
+    std::cout << all[0];
 
-    for(auto x : all){
-        std::cout << x << std::endl;
-    }
+   
 
     
     

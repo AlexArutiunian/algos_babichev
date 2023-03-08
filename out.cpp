@@ -35,25 +35,22 @@ int main(){
 
     for(auto x : all){
         
-
-        std::cout << x << std::endl;
-
         c = x[0];
         int count = 0;
-
-        while(c != '\n'){
-        
+        c = x[count];
+        while(x[count] != '\n'){
+        count += 1;
         switch(condition){
 
         case program_text:
 
             if(c == '/'){
                 prev_c = c;
-                count += 1;
+                
                 c = x[count];
+                
 
-                std::cout << count << std::endl;
-                std::cout << c << std::endl;
+                
                
                 
                 if(c == '*'){

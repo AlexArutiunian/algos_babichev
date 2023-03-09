@@ -1,4 +1,12 @@
 // This is my first program
+/*
+
+ajaf
+
+afkjklajf
+
+
+*/
 int main() /* Типа главной функции */ {
     int c = '//';
     char *d = "/*Это не комментарий*/"; /* А вот это - комментарий */

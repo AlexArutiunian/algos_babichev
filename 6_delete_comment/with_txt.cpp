@@ -4,7 +4,7 @@
 // Problem can be solve by state machine (конечный автомат)
 
 int main(){
-    std::ifstream in("6.cpp");
+    std::ifstream in("in.txt");
     std::ofstream out("out.txt");
      
     // this data structure for storage 
@@ -28,7 +28,7 @@ int main(){
 
     char c = ' ';
     char prev_c = ' ';
-    while(in.get(c)){
+    while(std::cin.get(c)){
         switch(condition){
 
         // starting always from original_text    
@@ -37,7 +37,7 @@ int main(){
 
             if(c == '/'){
                 prev_c = c;
-                c = in.get();
+                c = std::cin.get();
                 // next if - for manystring comment
                 if(c == '*'){
                     condition = manystring_comment;
